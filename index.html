@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Store Redirect</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            if (/android/i.test(navigator.userAgent)) {
+                window.location.href = "https://play.google.com/store/search?q=Andes%20laundry&c=apps&hl=en";
+            } else if (/iphone|ipod|ipad/i.test(navigator.userAgent)) {
+                window.location.href = "https://apps.apple.com/us/app/idYOUR_APP_ID";
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>Redirecting...</h1>
+    <p>If you are not redirected automatically, please <a href="https://play.google.com/store/search?q=Andes%20laundry&c=apps&hl=en">click here</a> for Android or <a href="https://apps.apple.com/us/app/idYOUR_APP_ID">click here</a> for iOS.</p>
+</body>
+</html>
