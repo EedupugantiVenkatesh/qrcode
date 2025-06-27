@@ -1,19 +1,49 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
+
+    <title>Andes App Redirect</title>
+
     <script type="text/javascript">
+
         window.onload = function() {
+
             if (/android/i.test(navigator.userAgent)) {
+
                 window.location.href = "https://play.google.com/store/apps/details?id=com.andes.laundry&hl=en";
+
+            } else if (/ios/i.test(navigator.userAgent)) {
+
+                window.location.href = "https://apps.apple.com/in/app/andes/id6747010488";
+
             } else {
+
                 window.location.href = "https://wa.me/8626076578";
+
             }
+
         };
+
     </script>
+
 </head>
+
 <body>
+
+    <h1>Redirecting...</h1>
+
+    <p>If you are not redirected automatically, please <a href="https://play.google.com/store/apps/details?id=com.andes.laundry&hl=en">click here</a> 
+
+for Android <a href="https://apps.apple.com/in/app/andes/id6747010488">click here</a> for ios
+
+ or <a href="https://wa.me/8626076578">click here</a> for WhatsApp Order.</p>
+
 </body>
+
 </html>
